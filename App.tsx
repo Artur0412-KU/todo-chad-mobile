@@ -1,24 +1,24 @@
 import { StatusBar } from 'expo-status-bar';
 import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
-import { useFonts, Poppins_400Regular } from '@expo-google-fonts/poppins';
 import useFontsLoad from './hooks/useFontsLoad';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { NavigationContainer } from '@react-navigation/native';
+import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
 
+const Stack = createNativeStackNavigator()
 
 export default function App() {
   const fontsLoad = useFontsLoad()
 
-  if(!fontsLoad) {
-    return <View>
-      <ActivityIndicator size='large' color='#fff'/>
-    </View>
-  } else {
-    return (
-      <View style={styles.container}>
-       <Text style = {{fontFamily: 'Poppins_400Regular', color: '#fff'}}>Open up App.tsx to start working on your app!</Text>
-       <StatusBar style="auto" />
-      </View>
-    );
-  }
+  return (
+    <NavigationContainer>
+      <Stack.Navigator id={undefined} screenOptions={{headerShown: false}}>
+           <Stack.Screen name='signin' component={SignIn}/>
+           <Stack.Screen name='signup' component={SignUp}/>
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
   
 }
 
