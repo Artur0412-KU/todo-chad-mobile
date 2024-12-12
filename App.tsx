@@ -9,8 +9,6 @@ import SignUp from './pages/SignUp';
 const Stack = createNativeStackNavigator()
 
 export default function App() {
-  const fontsLoad = useFontsLoad()
-
   return (
     <NavigationContainer>
       <Stack.Navigator id={undefined} screenOptions={{headerShown: false}}>
