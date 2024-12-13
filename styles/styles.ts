@@ -77,6 +77,60 @@ const styles = StyleSheet.create({
       fontSize: 14,
       color: '#fff',
       fontFamily: 'Poppins_700Bold',
+    },
+
+    socialMediaContainer: {
+      gap: 28,
+      marginTop: 56,
+    },
+    gihubButton: {
+      width: '80%',
+      backgroundColor: '#000',
+      paddingLeft: 25,
+      paddingRight: 153,
+      paddingTop: 9,
+      paddingBottom: 9,
+      borderRadius: 15,
+      flexDirection: 'row',
+      gap: 10
+    },
+    linkedInButton: {
+      width: '80%',
+      backgroundColor: '#0090FF',
+      paddingLeft: 25,
+      paddingRight: 141,
+      paddingTop: 9,
+      paddingBottom: 9,
+      borderRadius: 15,
+      flexDirection: 'row',
+      boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
+      gap: 10
+    },
+    gihubButtonText: {
+      fontSize: 16,
+      color: '#fff',
+      fontFamily: 'Poppins_400Regular',
+    },
+
+    signOutButton: {
+      width: '70%',
+      backgroundColor: '#000',
+      paddingLeft: 35,
+      paddingRight: 35,
+      paddingTop: 9,
+      paddingBottom: 9,
+      borderRadius: 15,
+      marginTop: 140,
+      fontFamily: 'Poppins_500Medium',
+      color: '#fff',
+      textAlign: 'center'
+    }, 
+    
+    signOutButtonText: {
+      fontSize: 16,
+      color: '#fff',
+      textAlign: 'center',
+      fontFamily: 'Poppins_500Medium'
     }
 });
 
