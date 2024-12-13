@@ -21,6 +21,7 @@ export default function SignUp({navigation}: any) {
         Alert.alert('Error', 'This email has already been')
       }
       setLoading(false)
+      
     }
 
     if(!fontsLoad) {
