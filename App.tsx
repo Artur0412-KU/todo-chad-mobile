@@ -6,7 +6,8 @@ import SignUp from './pages/SignUp';
 import { useEffect, useState } from 'react';
 import { onAuthStateChanged, User } from 'firebase/auth';
 import { firebase_auth } from './FirebaseConfig';
-import Layout from './pages/Home';
+import Layout from './pages/Home/_layout';
+import Home from './pages/Home';
 
 const Stack = createNativeStackNavigator()
 
