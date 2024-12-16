@@ -131,6 +131,25 @@ const styles = StyleSheet.create({
       color: '#fff',
       textAlign: 'center',
       fontFamily: 'Poppins_500Medium'
+    },
+
+    todoHeader: {
+      alignItems: 'flex-start',
+      paddingRight: 50,
+    },
+
+    todoHeaderTitle: {
+      fontSize: 28,
+      fontFamily: 'Poppins_700Bold',
+      color: '#fff',
+      textAlign: 'left',
+    },
+
+    todoHeaderSubtile: {
+      fontSize: 16,
+      color: '#fff',
+      fontFamily: 'Poppins_400Regular',
+      paddingTop: 15,
     }
 });
 
