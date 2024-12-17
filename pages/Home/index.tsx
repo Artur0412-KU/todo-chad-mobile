@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { SafeAreaView, Text, View } from 'react-native'
 import styles from '../../styles/styles'
 import Input from '../../components/Input'
+import * as Haptics from 'expo-haptics'
 
 export default function Home() {
   const [complete, setComplete] = useState(0)
