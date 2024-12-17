@@ -17,7 +17,6 @@ export default function Input({incomplete, setIncomplete, complete, setComplete}
        addTaskHelper(tasks, setTasks, text)
        setText('')
        Haptics.selectionAsync()
-
        setIncomplete(incomplete+1)
     }
 
