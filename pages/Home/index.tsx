@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import { Button, SafeAreaView, Text, View } from 'react-native'
+import { SafeAreaView, Text, View } from 'react-native'
 import styles from '../../styles/styles'
-import { firebase_auth } from '../../FirebaseConfig'
+import Input from '../../components/Input'
 
 export default function Home() {
   const [complete, setComplete] = useState(0)
-  const [incomplete, setIncomplete] = useState(1)
-  
+  const [incomplete, setIncomplete] = useState(0)
+
   const currentDate = () => {
     let date = new Date()
     const options: Intl.DateTimeFormatOptions = {
@@ -23,7 +23,7 @@ export default function Home() {
         <Text style = {styles.todoHeaderTitle}>{currentDate()}</Text>
         <Text style = {styles.todoHeaderSubtile}>{incomplete} incomplete, {complete} complete</Text>
       </View>
-      
+      <Input incomplete={incomplete} setIncomplete={setIncomplete} complete={complete} setComplete={setComplete}/>
     </SafeAreaView>
   )
 }

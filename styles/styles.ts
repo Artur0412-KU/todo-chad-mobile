@@ -150,7 +150,76 @@ const styles = StyleSheet.create({
       color: '#fff',
       fontFamily: 'Poppins_400Regular',
       paddingTop: 15,
+    },
+
+    todoListContainer: {
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      flexDirection: 'column',
+
+    },
+
+    inputPrintContainer: {
+      flexDirection: 'row',
+      gap: 16,
+      backgroundColor: '#646464',
+      paddingLeft: 15,
+      paddingRight: 15,
+      paddingTop: 9,
+      paddingBottom: 9,
+      borderRadius: 7,
+    },
+    inputPrintButton: {
+      backgroundColor: '#000',
+      opacity: 0.88,
+      padding: 8,
+      borderRadius: 30,
+    },
+    inputPrint: {
+      width: '70%',
+      color: '#fff',
+      fontFamily: 'Poppins_500Medium',
+      fontSize: 14,
+    },
+
+    clearButton: {
+      color: '#fff',
+      backgroundColor: '#000',
+      width: '50%',
+      paddingLeft: 54,
+      paddingRight: 54,
+      paddingTop: 8,
+      paddingBottom: 8,
+      borderRadius: 15,
+      alignItems: 'center',
+      justifyContent: 'center',
+      marginTop: 200
+    },
+    taskInputContainer: {
+      backgroundColor: '#646464',
+      paddingLeft: 15,
+      paddingRight: 15,
+      paddingTop: 10,
+      paddingBottom: 10,
+      borderRadius: 5,
+      marginBottom: 25,
+      flexDirection: 'row',
+      gap: 15,
+      alignItems: 'center',
+    },
+    taskInputContainerText: {
+      fontSize: 14,
+      fontFamily: 'Poppins_400Regular',
+      color: '#fff',
+      width: '60%'
+    },
+    clearButtonText: {
+      color: '#fff',
+      fontSize: 16,
+      fontFamily: 'Poppins_500Medium',
+      
     }
+    
 });
 
 export default styles
