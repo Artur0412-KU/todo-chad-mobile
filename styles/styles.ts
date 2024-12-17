@@ -150,13 +150,14 @@ const styles = StyleSheet.create({
       color: '#fff',
       fontFamily: 'Poppins_400Regular',
       paddingTop: 15,
+      paddingBottom: 25
     },
 
     todoListContainer: {
       alignItems: 'center',
       justifyContent: 'space-between',
       flexDirection: 'column',
-
+      height: '80%'
     },
 
     inputPrintContainer: {
@@ -168,11 +169,15 @@ const styles = StyleSheet.create({
       paddingTop: 9,
       paddingBottom: 9,
       borderRadius: 7,
+      marginTop: 43
     },
     inputPrintButton: {
       backgroundColor: '#000',
       opacity: 0.88,
-      padding: 8,
+      paddingRight: 10,
+      paddingLeft: 10,
+      paddingTop: 9,
+      paddingBottom: 9,
       borderRadius: 30,
     },
     inputPrint: {
@@ -205,6 +210,7 @@ const styles = StyleSheet.create({
       marginBottom: 25,
       flexDirection: 'row',
       gap: 15,
+      width: '100%',
       alignItems: 'center',
     },
     taskInputContainerText: {
